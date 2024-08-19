@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-MsgatewayApplication<msgateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.guardioes.msgateway.MsgatewayApplication",
+            "projectName": "msgateway",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

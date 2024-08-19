@@ -20,9 +20,10 @@ public class MsgatewayApplication {
 		return builder
 				.routes()
 					.route(r -> r.path("/api/v1/pasteis/**").uri("lb://cadastramento"))
-//					.route(r -> r.path("/api/v1/usuarios/**").uri("lb://cadastrousuarios"))
-//					.route(r -> r.path("/item/**").uri("lb://pedidos"))
-//				    .route(r -> r.path("/pedidos/**").uri("lb://pedidos"))
+					.route(r -> r.path("/api/v1/usuarios/**").uri("lb://cadastrousuarios"))
+					.route(r -> r.path("/item/**").uri("lb://pedidos"))
+				    .route(r -> r.path("/pedidos/**").uri("lb://pedidos"))
+					.route(r -> r.path("/api/v1/email/**").uri("lb://servicoemail"))
 				.build();
 	}
 
